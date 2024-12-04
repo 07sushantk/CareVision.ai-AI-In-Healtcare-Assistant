@@ -50,11 +50,10 @@ Before setting up CareVision.ai, ensure the following are installed:
    ```
 
 4. **Configure API Keys**  
-   Create a `.env` file in the project root directory and add your Google Generative AI API key:  
-   ```plaintext
-   GOOGLE_API_KEY=your-google-generative-ai-key
+   open the api_key.py and add your api key
+   api_key="your api key here"
    ```
-   Replace `your-google-generative-ai-key` with your actual API key.
+   Replace `your api key here` with your actual API key.
 
 5. **Run the Application**  
    Start the local development server with Streamlit:  
