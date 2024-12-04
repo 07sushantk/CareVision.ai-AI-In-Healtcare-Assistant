@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflectv</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+  <!-- Background Gradient Animation -->
+  <div id="bg-wrap">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop>
+          <stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop>
+        </radialGradient>
+        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop>
+          <stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop>
+        </radialGradient>
+        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop>
+        </radialGradient>
+        <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop>
+        </radialGradient>
+        <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(0, 0, 255, 1)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 0, 255, 0)"></stop>
+        </radialGradient>
+        <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 0, 0, 1)"></stop>
+          <stop offset="100%" stop-color="rgba(255, 0, 0, 0)"></stop>
+        </radialGradient>
+      </defs>
+      <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)">
+        <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform>
+      </rect>
+      <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)">
+        <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+      </rect>
+      <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)">
+        <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+      </rect>
+    </svg>
+  </div>
+
+  <!-- Rest of the Content -->
+  <header>
+    <div class="logo">
+      <h4>
+        <span class="logo-icon">🩺</span> CareVision.<span class="logo-highlight">ai</span>
+      </h4>
+    </div>
+    <a href="about.html"><p>About</p></a>
+    <div class="dropdown">
+      <p class="dropdown-trigger">Services</p>
+      <div class="dropdown-menu">
+        <a href="http://localhost:8502">AI-ImageAnalyser</a>
+        <a href="http://localhost:8503">Healthcare-chatbox</a>
+        <a href="http://localhost:8501">Mediverse</a>
+      </div>
+    </div>
+    <a href="contact.html"><p>Contact</p></a>
+  </header>
+
+  <div class="container">
+    <div class="panel">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="panel">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="panel">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="panel">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+  </div>
+
+  <div class="layer">
+    <h1>WE<span>ARE</span>CareVision.ai</h1>
+    <div class="cta">
+      <p>Learn More</p>
+      <svg viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </div>
+  </div>
+
+  <footer>
+    <div class="replay">REPLAY</div>
+    <p>Based on this <a href="https://dribbble.com/shots/3911960-Reflet-Communication" target="_blank">Real</a>. Not Imaginary</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

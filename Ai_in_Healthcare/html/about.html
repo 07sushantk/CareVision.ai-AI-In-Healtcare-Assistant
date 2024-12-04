@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - AI-Based Healthcare Assistant</title>
+  <link rel="stylesheet" href="/styles/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body, html, #app {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #app {
+      overflow: hidden;
+    }
+
+    #app canvas {
+      display: block;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+    }
+
+    /* Link styles for metadata */
+    #source-link {
+      top: 60px;
+    }
+
+    #source-link > i {
+      color: rgb(94, 106, 210);
+    }
+
+    #yt-link {  
+      top: 10px;
+    }
+
+    #yt-link > i {
+      color: rgb(219, 31, 106);
+    }
+
+    .meta-link {
+      align-items: center;
+      backdrop-filter: blur(3px);
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      cursor: pointer;  
+      display: inline-flex;
+      gap: 5px;
+      left: 10px;
+      padding: 10px 20px;
+      position: fixed;
+      text-decoration: none;
+      transition: background-color 600ms, border-color 600ms;
+      z-index: 10000;
+    }
+
+    .meta-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .meta-link > i, .meta-link > span {
+      height: 20px;
+      line-height: 20px;
+    }
+
+    .meta-link > span {
+      color: white;
+      font-family: "Rubik", sans-serif;
+      transition: color 600ms;
+    }
+  </style>
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="app">
+    <canvas></canvas>
+  </div>
+
+  <!-- About Us Content -->
+  <div class="container">
+    <header class="header">
+      <h1>About Us</h1>
+    </header>
+
+    <section class="card glass">
+      <h2>Who We Are</h2>
+      <p>We are a team of Carevision.ai that passionate about revolutionizing the healthcare experience. By combining advanced AI technologies with user-friendly design, we aim to bridge the gap between patients and healthcare providers.</p>
+    </section>
+
+    <section class="card glass">
+      <h2>Our Mission</h2>
+      <p>To create an AI-powered healthcare assistant that empowers individuals and healthcare professionals with tools for real-time diagnosis, preventive care, and personalized health management.</p>
+    </section>
+
+    <section class="card glass">
+      <h2>Our Vision</h2>
+      <p>A future where quality healthcare is universally accessible, diagnostics are quick and precise, and individuals have the tools to proactively manage their health.</p>
+    </section>
+
+    <section class="card glass">
+      <h2>Key Features</h2>
+      <ul>
+        <li>AI-Powered Symptom Checker</li>
+        <li>Medical Imaging Analysis</li>
+        <li>Health Monitoring Dashboard</li>
+        <li>Real-Time Responses</li>
+        <li>Multi-Platform Accessibility</li>
+        <li>User-Centric Interface</li>
+        <li>AI-Chatbot</li>
+        <li>Medicine searcher</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 AI-Based Healthcare Assistant. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script type="module">
+    import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js';
+
+    const pc = particlesCursor({
+      el: document.getElementById('app'),
+      gpgpuSize: 512,
+      colors: [0x00fffc, 0x0000ff],
+      coordScale: 0.5,
+      noiseIntensity: 0.005,
+      noiseTimeCoef: 0.0001,
+      pointSize: 2,
+      pointDecay: 0.0025,
+      sleepRadiusX: 250,
+      sleepRadiusY: 250,
+      sleepTimeCoefX: 0.001,
+      sleepTimeCoefY: 0.002
+    });
+  </script>
+</body>
+</html>

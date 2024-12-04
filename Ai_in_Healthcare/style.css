@@ -1,0 +1,16 @@
+body {
+    background: radial-gradient(#292929, #0e0d0d);
+    color: #ebebeb;
+    font-family: "Titillium Web", sans-serif;
+}
+
+h4 {
+    color: #d6157c;
+    text-align: center;
+    font-size: 2rem;
+}
+
+a {
+    color: #d6157c;
+    text-decoration: none;
+}
