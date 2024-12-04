@@ -51,9 +51,8 @@ Before setting up CareVision.ai, ensure the following are installed:
 
 4. **Configure API Keys**  
    open the api_key.py and add your api key
-   api_key="your api key here"
    ```
-   Replace `your api key here` with your actual API key.
+   api_key="your api key here"
 
 5. **Run the Application**  
    Start the local development server with Streamlit:  
